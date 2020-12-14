@@ -1,0 +1,58 @@
+#qna{
+    margin-top:40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+.status-bar {
+    margin-left:50px;
+    display: flex;
+    align-self: center;
+    margin-bottom: 20px;
+    width: 75%;
+    height: 15px;
+    border: 3px solid #ddd;
+    border-radius: 20px;
+    background: #fff;
+    animation: fade-in 0.3s ease-in-out;
+}
+.status {
+    align-self: center;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(191, 168, 255, 0.7);
+}
+.q_box {
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.a_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 405px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #ff5100;
+    margin: auto auto 40px;
+    padding: 0 30px;
+    cursor: pointer;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -.5px;
+    border: 0;
+    outline: none;
+}

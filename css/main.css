@@ -1,0 +1,14 @@
+body {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    height: 100vh;
+    margin: auto !important;
+    background: white;
+    overflow: hidden;
+}
+
+#wrap{
+    height: 100%;
+    
+}

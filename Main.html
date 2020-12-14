@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+
+    <meta name="author" content="Tom Ko">
+
+    <meta name="keywords" content="이미지 테스트, 나를 알아보는 10가지 질문, 10-things-test, 3분이미지테스트, 이미지테스트">
+    <meta name="description" content="이미지 테스트: 나를 알아보는 10가지 질문">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="나를 알아보는 10가지 질문">
+    <meta property="og:description" content="사람들이 보는 나는 어떤 이미지일까?">
+    <meta property="og:image" content="img/og-logo.jpg>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>
+        내 성격을 알기 위 12가지 질문
+    </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/head+footer.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/qna.css">
+    <link rel="stylesheet" href="css/calc.css">
+    <link rel="stylesheet" href="css/result.css">
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <!--[if lt ie 11]>
+    <script>
+        alert('IE 11 미만 브라우저에서는 정상적으로 동작하지 않습니다.\n다른 브라우저(크롬, 파이어폭스 등)를 이용해주세요.');
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+    <section id="welcome" class="container">
+        <div id="title-box">
+            <h1 class="main_title">
+                크리스마스에
+                <br>
+                당신에게 추천할 영화!
+            </h1>
+            <h3 class="sub_title">
+                대 코로나 시국... 집에서 영화 한편 하세요.
+            </h3>
+        </div>
+        
+        <!--
+        <div id="name-input">
+            <input type="text" placeholder="이름" autofocus>
+        </div>
+        <p class="check-name warning"></p>
+        -->
+        <div class="start-wrap">
+            <button class="start">테스트 시작하기</button>
+        </div>
+    </section>
+    <section id="qna" class="container">
+        <div class="status-bar">
+            <div class="status"></div>
+        </div>
+        <div class="q_box"></div>
+        <div class="answer">
+          
+        </div>
+    </section>
+    <section id="calc">
+        <div class="calc-bar">
+            CALCULATING
+            <div class="calc"></div>
+        </div>
+        <p class="wait">잠시 기다려주세요...</p>
+    </section>
+    <section id="result" class="container">
+        <div id="score-box">
+            <div class="p title"></div>
+            <!--
+            <div class="point"></div>
+            -->
+            <div class="pin"></div>
+        </div>
+        <div id="desc-box">
+            <div class="art"></div>
+            <div class="result title"></div>
+            <div class="res desc"></div>
+
+            <br>
+        </div>
+        <div class = "about-match">
+            <!-- 나와 잘 맞는 xxx 추천 -->
+            <div class="match-box">나와 어울리는 친구
+                <div class="match-img"></div>
+                <div class="match-text"></div>
+            </div>
+            <!-- 나와 잘 맞지 않는 xxx 추천 -->
+            <div class="unmatch-box">나와 어울리지 않는 친구
+                <div class="unmatch-img"></div>
+                <div class="unmatch-text"></div>
+            </div>
+        </div>
+        <hr>
+        <p>친구들과 공유하기</p>
+        <div class="hash">#12_my_interior #2분이미지테스트 #이미지테스트</div>
+        <!-- 카카오톡 공유하기 들어가면 좋을 것 같음-->
+        <button onclick=javascript:copy() class="btn">링크 복사하기</button>
+        <a id="kakao-link-btn" href="javascript:sendLink()">
+            <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
+        </a>
+
+        <hr>
+        <div id="intro-box">
+            <div class="art-name">톰(Tom)</div>
+            <button class="art-sns btn">
+                <a href="https://www.ggumim.co.kr/" target="_blank" title="인스타그램">
+                    더 많은 인테리어 보러가기
+                </a>
+            </button>
+        </div>
+        <hr>
+        <div class="caution">
+
+        </div>
+    </section>
+    <footer id="footer">
+    </footer>
+</div>
+<script src="js/darkmode.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/share.js"></script>
+<script type='text/javascript'>
+    //<![CDATA[
+    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+    Kakao.init('e9b6e1c42f709c4f9b3240faaa0f719f');
+    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+    Kakao.Link.createDefaultButton({
+        container: '#kakao-link-btn',
+        objectType: 'feed',
+        content: {
+            title: '내 성격은 어떨까?',
+            description: '심리테스트를 통해 내 성격을 알아보세요',
+            imageUrl: 'img/image-0.png',
+            link: {
+                mobileWebUrl: 'http://yungsu23911.dothome.co.kr/',
+                webUrl: 'http://yungsu23911.dothome.co.kr/'
+            }
+        },
+        social: {
+            likeCount: 286,
+            commentCount: 45,
+            sharedCount: 845
+        },
+        buttons: [
+            {
+                title: '웹으로 보기',
+                link: {
+                    mobileWebUrl: 'http://yungsu23911.dothome.co.kr/',
+                    webUrl: 'http://yungsu23911.dothome.co.kr/'
+                }
+            },
+            {
+                title: '앱으로 보기',
+                link: {
+                    mobileWebUrl: 'http://yungsu23911.dothome.co.kr/',
+                    webUrl: 'http://yungsu23911.dothome.co.kr/'
+                }
+            }
+        ]
+    });
+    //]]>
+</script>
+</body>
+
+</html>
