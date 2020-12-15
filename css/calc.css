@@ -5,13 +5,13 @@
 .calc-bar {
     position: relative;
     box-sizing: border-box;
-    margin: 30vh 15vw 10px 15vw;
+    margin: 30vh 15vw 80px 70px;
     width: 70%;
     height: 9vh;
     line-height: 9vh;
     border-radius: 10px;
-    background: #222;
-    color: #fff;
+    background:rgb(133,215,164);
+    color:black;
     font-size: 8px;
     font-size: 0.5rem;
     font-weight: lighter;
@@ -48,45 +48,3 @@
 }
 
 /* media query */
-@media all and (min-width: 486px) {
-    .calc-bar {
-        font-size: 12.8px;
-        font-size: 0.8rem;
-        letter-spacing: 16px;
-        letter-spacing: 1rem;
-    }
-}
-
-@media all and (min-width: 768px) {
-    .calc-bar {
-        margin: 25vh 20vw 30px 20vw;
-        width: 60%;
-        font-size: 17.6px;
-        font-size: 1.1rem;
-        letter-spacing: 20.8px;
-        letter-spacing: 1.3rem;
-    }
-    .wait {
-        font-size: 32px;
-        font-size: 2rem;
-        font-weight: lighter;
-        text-align: center;
-    }
-}
-
-@media all and (min-width: 1024px) {
-    .calc-bar {
-        margin: 25vh 25vw 40px 25vw;
-        width: 50%;
-        font-size: 20.8px;
-        font-size: 1.3rem;
-        letter-spacing: 24px;
-        letter-spacing: 1.5rem;
-    }
-    .wait {
-        font-size: 35.2px;
-        font-size: 2.2rem;
-        font-weight: lighter;
-        text-align: center;
-    }
-}
