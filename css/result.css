@@ -44,7 +44,6 @@ li::before{
 .desc_txt{
     text-align: start;
     display: inline-block;
-    word-break: keep-all;
     font-size: 15.5px;
     font-weight: 500;
     font-stretch: normal;
