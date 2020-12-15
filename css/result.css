@@ -56,8 +56,8 @@ li::before{
     margin-bottom: 11px;
 }
 .about-match img{
-    width: 170px;
-    height: 250px;
+    width: 130px;
+    height: 230px;
 }
 .about-match{
     display: flex;
@@ -83,7 +83,7 @@ li::before{
     margin-left: 90px;
 }
 .more_movie, .restart{
-    width: 350px;
+    width: 300px;
     height: 80px;
     border-radius: 20px;
     background-color: #ff5100;
