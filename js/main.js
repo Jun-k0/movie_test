@@ -230,6 +230,7 @@ const goResult = () => {
     //추가된 const(종료)
     const animal = document.querySelector('.text2');
     const desc = document.querySelector('.res_title');
+    const li1=document.querySelector('.li1');
 
     // res_point.innerHTML = infoList[grade].stitle;
     res_img.src = img_url;
@@ -238,6 +239,7 @@ const goResult = () => {
     res_img_div.appendChild(res_img);
     animal.innerHTML = infoList[grade].name;
     desc.innerHTML = infoList[grade].desc;
+    li1.innerHTML = infoList[grade].li_1;
 
     //추가된 matched, unmatched 이미지, 설명값
     match_img.src = match_img_url;
@@ -255,17 +257,14 @@ const goResult = () => {
     result.style.display='block';
     console.log('res expe');
 
-    setTimeout(() => {
+    footer.style.display = 'block';
+    result.style.display = 'block';
 
-        footer.style.display = 'block';
-        result.style.display = 'block';
-
-        footer.style.animation =
-            'fade-in 0.3s forwards';
-        result.style.animation =
-            'going-up 0.5s, ' +
-            'fade-in 0.5s forwards';
-    }, 600);
+    footer.style.animation =
+        'fade-in 0.3s forwards';
+    result.style.animation =
+        'going-up 0.5s, ' +
+        'fade-in 0.5s forwards';
 
 }
 
@@ -317,8 +316,8 @@ const addAnswer = (answerTxt, idx) => {
         }, 800);
     });
 
-    setTimeout(() => answer.style.animation =
-        'going-down 0.25s forwards, fade-in 0.25s forwards', 50);
+    answer.style.animation =
+        'going-down 0.25s forwards, fade-in 0.25s forwards'
     a.appendChild(answer);
 }
 

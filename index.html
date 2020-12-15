@@ -92,7 +92,7 @@
             </div> 
             <h3 class="res_title"></h3>
             <ul class="res_desc">
-                <li class="desc_txt">ㄱㄱㄱㄱ</li>
+                <li class="desc_txt li1">ㄱㄱㄱㄱ</li>
                 <li class="desc_txt">ㄱㄱㄱㄱ</li>
                 <li class="desc_txt">ㄱㄱㄱㄱ</li>
                 <li class="desc_txt">ㄱㄱddddddddddddddddddddddddddddddddddddㄱㄱ</li>
@@ -117,9 +117,9 @@
         </div>
         <h3 class="share_txt">결과 공유하고 영화친구 찾기</h3>
         <div class="share_box">
-            <div id="kakao-link-btn" href="javascript:sendLink()">
+            <a id="kakao-link-btn" href="javascript:sendLink()">
                 <img src="img/kakaoicon.png"/>
-            </div>
+            </a>
             <div class="btn">
                 <img src="img/kakaoicon.png">
             </div>
@@ -134,51 +134,46 @@
     <footer id="footer">
     </footer>
 </div>
-<script src="js/darkmode.js"></script>
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
-<script src="js/share.js"></script>
-<script type='text/javascript'>
-    //<![CDATA[
-    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('e9b6e1c42f709c4f9b3240faaa0f719f');
-    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createDefaultButton({
-        container: '#kakao-link-btn',
+<script type="text/javascript">
+    function sendLink() {
+      Kakao.Link.sendDefault({
         objectType: 'feed',
         content: {
-            title: '내 성격은 어떨까?',
-            description: '심리테스트를 통해 내 성격을 알아보세요',
-            imageUrl: 'img/image-0.png',
-            link: {
-                mobileWebUrl: 'http://yungsu23911.dothome.co.kr/',
-                webUrl: 'http://yungsu23911.dothome.co.kr/'
-            }
+          title: '딸기 치즈 케익',
+          description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+          imageUrl:
+            'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+          link: {
+            mobileWebUrl: 'https://jun-k0.github.io/movie_test/',
+            webUrl: 'https://jun-k0.github.io/movie_test/',
+          },
         },
         social: {
-            likeCount: 286,
-            commentCount: 45,
-            sharedCount: 845
+          likeCount: 286,
+          commentCount: 45,
+          sharedCount: 845,
         },
         buttons: [
-            {
-                title: '웹으로 보기',
-                link: {
-                    mobileWebUrl: 'http://yungsu23911.dothome.co.kr/',
-                    webUrl: 'http://yungsu23911.dothome.co.kr/'
-                }
+          {
+            title: '웹으로 보기',
+            link: {
+              mobileWebUrl: 'https://jun-k0.github.io/movie_test/',
+              webUrl: 'https://jun-k0.github.io/movie_test/',
             },
-            {
-                title: '앱으로 보기',
-                link: {
-                    mobileWebUrl: 'http://yungsu23911.dothome.co.kr/',
-                    webUrl: 'http://yungsu23911.dothome.co.kr/'
-                }
-            }
-        ]
-    });
-    //]]>
-</script>
+          },
+          {
+            title: '앱으로 보기',
+            link: {
+              mobileWebUrl: 'https://jun-k0.github.io/movie_test/',
+              webUrl: 'https://jun-k0.github.io/movie_test/',
+            },
+          },
+        ],
+      })
+    }
+  </script>
 </body>
 
 </html>
