@@ -198,10 +198,10 @@ const unmatchResult = (grade) => {
 const goResult = () => {
     if (pcMQL.matches) {
         console.log('PC');
-        wrap.style.marginTop = '150px';
+        wrap.style.marginTop = '10px';
     } else if (tabletMQL.matches) {
         console.log('tablet');
-        wrap.style.marginTop = '115px';
+        wrap.style.marginTop = '10px';
     }
 
     const result = document.getElementById('result');
@@ -228,11 +228,10 @@ const goResult = () => {
     const unmatch_img = document.createElement('img');
     const unmatch_div = document.querySelector('.unmatch-img');
     //추가된 const(종료)
-    const animal = document.querySelector('.result');
-    const desc = document.querySelector('.res');
+    const animal = document.querySelector('.text2');
+    const desc = document.querySelector('.res_title');
 
     // res_point.innerHTML = infoList[grade].stitle;
-    pin.style.marginLeft = infoList[grade].mLeft;
     res_img.src = img_url;
     res_img.alt = infoList[grade].name;
     res_img.title = infoList[grade].name;
@@ -253,7 +252,8 @@ const goResult = () => {
     unmatch_div.appendChild(unmatch_img);
 
     //추가된 matched, unmatched 이미지, 설명값
-
+    result.style.display='block';
+    console.log('res expe');
 
     setTimeout(() => {
 
@@ -383,3 +383,14 @@ const load = () => {
 }
 
 window.onload = load();
+
+document.querySelector(".btn").addEventListener("click", function(){
+    var tempElem = document.createElement('textarea');
+    tempElem.value = 'https://jun-k0.github.io/movie_test/';  
+    document.body.appendChild(tempElem);
+  
+    tempElem.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempElem);
+    alert("공유 링크가 복사되었습니다!")
+  });
