@@ -9,10 +9,8 @@
     overflow-y: auto;
 }
 .status-bar {
-    margin-left:50px;
     display: flex;
     align-self: center;
-    margin-bottom: 20px;
     width: 75%;
     height: 15px;
     border: 3px solid black;
@@ -21,6 +19,8 @@
     animation: fade-in 0.3s ease-in-out;
     margin-bottom: 60px;
     margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .status {
     align-self: center;
@@ -35,10 +35,14 @@
     font-size: 27px;
     margin-bottom: 70px;
     margin-top: 30px;
-    padding-left: 40px;
-    padding-right: 40px;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 700;
     line-height: 1.60;
+}
+.answer{
+    margin-top:100px;
 }
 .a_box{
     display: flex;
@@ -49,7 +53,7 @@
     height: 80px;
     border-radius: 20px;
     background-color: #ff5100;
-    margin: auto auto 40px;
+    margin: auto auto 20px;
     padding: 0 30px;
     cursor: pointer;
     color:black;
@@ -62,3 +66,4 @@
     border: 0;
     outline: none;
 }
+
