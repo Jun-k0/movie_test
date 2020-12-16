@@ -3,7 +3,7 @@ body {
     max-width: 500px;
     width: 100%;
     margin: auto !important;
-    background: rgb(12,176,74);
+    background: darkgray;
     overflow: hidden;
 }
 

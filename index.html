@@ -91,10 +91,10 @@
             </div> 
             <h3 class="res_title"></h3>
             <ul class="res_desc">
-                <li class="desc_txt li1">ㄱㄱㄱㄱ</li>
-                <li class="desc_txt">ㄱㄱㄱㄱ</li>
-                <li class="desc_txt">ㄱㄱㄱㄱ</li>
-                <li class="desc_txt">ㄱㄱddddddddddddddddddddddddddddddddddddㄱㄱ</li>
+                <li class="desc_txt li1"></li>
+                <li class="desc_txt li2"></li>
+                <li class="desc_txt li3"></li>
+                <li class="desc_txt li4"></li>
             </ul>
         </div>
         <div class = "about-match">
@@ -173,6 +173,19 @@
       })
     }
   </script>
+  <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
+  <script>
+      var sf = new Snowflakes({
+          color: "#ffffff", // 색상
+          count: 75, // 갯수
+          minOpacity: 0.2, // 최소 투명도 0: 투명 | 1: 불투명
+          maxOpacity: 0.6 // 최대 투명도
+          // 출처: https://sweet-myo.tistory.com/497 [달콤한환상]
+      });
+  </script>
+  
+  
+  
 </body>
 
 </html>

@@ -231,6 +231,9 @@ const goResult = () => {
     const animal = document.querySelector('.text2');
     const desc = document.querySelector('.res_title');
     const li1=document.querySelector('.li1');
+    const li2=document.querySelector('.li2');
+    const li3=document.querySelector('.li3');
+    const li4=document.querySelector('.li4');
 
     // res_point.innerHTML = infoList[grade].stitle;
     res_img.src = img_url;
@@ -240,6 +243,9 @@ const goResult = () => {
     animal.innerHTML = infoList[grade].name;
     desc.innerHTML = infoList[grade].desc;
     li1.innerHTML = infoList[grade].li_1;
+    li2.innerHTML = infoList[grade].li_2;
+    li3.innerHTML = infoList[grade].li_3;
+    li4.innerHTML = infoList[grade].li_4;
 
     //추가된 matched, unmatched 이미지, 설명값
     match_img.src = match_img_url;
