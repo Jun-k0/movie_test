@@ -45,7 +45,7 @@ const copy = () => {
 
 const e_calcScore = () => {
     let e_point = 0;
-    for (let i = 0; i < 3; i++) {
+    for (let i = 9; i < 12; i++) {
         e_point += qnaList[i].a[select[i]].energy_score;
     }
     console.log(e_point)
@@ -54,7 +54,7 @@ const e_calcScore = () => {
 
 const p_calcScore = () => {
     let p_point = 0;
-    for (let i = 3; i < 6; i++) {
+    for (let i = 0; i < 3; i++) {
         p_point += qnaList[i].a[select[i]].perception_score;
     }
     console.log(p_point)
@@ -72,7 +72,7 @@ const d_calcScore = () => {
 
 const pat_calcScore = () => {
     let pat_point = 0;
-    for (let i = 9; i < 12; i++) {
+    for (let i = 3; i < 6; i++) {
         pat_point += qnaList[i].a[select[i]].pattern_score;
     }
     console.log(pat_point)

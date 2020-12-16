@@ -66,7 +66,7 @@ const qnaList = [
         ]
     },
     {
-        q: '친구가 "나 꿀꿀해서 영화 한 편 보고 왔어"라고 할 때 나는',
+        q: '친구가 "꿀꿀해서 영화 한 편 보고 왔어"라 할 때 나는',
         a: [
             { answer: '"기분이 왜 꿀꿀해ㅠㅠ"', decision_score: 0 },
             { answer: '"오 어떤 영화 봤어??"', decision_score: 1 }
