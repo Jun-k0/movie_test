@@ -7,6 +7,7 @@
     width: 100%;
     height: 100%;
     overflow-y: auto;
+    opacity: 0;
 }
 .status-bar {
     display: flex;
