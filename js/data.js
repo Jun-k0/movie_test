@@ -10,87 +10,87 @@
 
 const qnaList = [
     {
-        q: '1. 회의에 들어가면 힘이 빠지는 편인가요?',
+        q: '나의 최애 영화를 설명할 때 나는',
         a: [
-            { answer: '예', energy_score: 0 },
-            { answer: '아니오 ', energy_score: 1 }
+            { answer: '구체적인 상황 하나하나 설명', perception_score: 0 },
+            { answer: '대략 느낌과 분위기를 설명', perception_score: 1 }
             ]
     },
     {
-        q: '2. 어디에서 일하는 것을 선호하시는 편인가요?',
+        q: '크리스마스에 연인(친구)를 기다릴 때 나는',
         a: [
-            { answer: '사무실 안 내 자리', energy_score: 0 },
-            { answer: '라운지', energy_score: 1 }
+            { answer: '오늘 어떻게 놀지 일정을 생각', perception_score: 0 }, // 0 i, e energy_score
+            { answer: '오와 저거 신기하다~ (의식의 흐름~)', perception_score: 1 }
             ]
     },
     {
-        q: '3. 문제가 닥쳤을 때',
+        q: '영화 속 등장인물이 되는 상상을 한 나는',
         a: [
-            { answer: '생각이 많아진다.', energy_score: 0 },
-            { answer: '말이 많아진다.', energy_score: 1 }
+            { answer: '상상하기를 거부한다.', perception_score: 0 },
+            { answer: '나도 언젠가 저런 백마탄 왕자님이.. ', perception_score: 1 }
             ]
     },
     {
-        q: '4. 내가 추구하는 것은?',
+        q: '영화를 예매할 때 나는',
         a: [
-            { answer: '가성비', perception_score: 0 },
-            { answer: '가심비', perception_score: 1 }
+            { answer: '그날따라 땡기는 영화', pattern_score: 0 }, // n,s 0 perception_score
+            { answer: '미리미리 계획대로', pattern_score: 1 }
             ]
     },
     {
-        q: '5. 누군가 슬랙에 글을 올렸다.',
+        q: '크리스마스에 예약한 식당이 문을 닫았을 때 나는',
         a: [
-            { answer: '오탈자가 있는지 먼저 봄 ', perception_score: 0 },
-            { answer: '전체적인 맥락을 파악하려고 함', perception_score: 1 }
+            { answer: '잠만 기다려봐. 금방 찾아볼게', pattern_score: 0 },
+            { answer: '옆에 괜찮은 식당있던데? 거기로 가자', pattern_score: 1 }
         ]
     },
     {
-        q: '6. 영화를 보고 나와서 "영화 어땠어?"',
+        q: '이번 주는 크리스마스인데 나는',
         a: [
-            { answer: '줄거리에 대해서 얘기함', perception_score: 0 },
-            { answer: '감독의 의도에 대해서 얘기함', perception_score: 1 }
+            { answer: '전날 미리 어떻게 나갈 지 준비한다.', pattern_score: 0 },
+            { answer: '아침에 끌리는 옷 입고 나간다.', pattern_score: 1 }
         ]
     },
     {
-        q: '7. 친구가 차사고가 났다. 친구한테 먼저 하는 말은?',
+        q: '영화를 보던 중 오징어 다리가 하나 남았을 때 나는?',
         a: [
-            { answer: '괜찮아? 많이 다쳤어??!!ㅠㅠㅜ', decision_score: 0 },
-            { answer: '보험 불렀어? 병원은?', decision_score: 1 }
+            { answer: '그냥 너 먹어ㅎㅎ', decision_score: 0 }, // t,f 0 decision_score
+            { answer: '안내면 진 거 가위바위보!!!', decision_score: 1 }
         ]
     },
     {
-        q: '8. "나 힘들게 돈 모아서 아이패드 샀어" 어떤 구문이 먼저 눈에 들어오세요?',
+        q: '영화 속 주인공이 된 나는',
         a: [
-            { answer: '힘들게 돈 모아서', decision_score: 0 },
-            { answer: '아이패드 샀어', decision_score: 1 }
+            { answer: '따뜻한 감성의 주인공', decision_score: 0 },
+            { answer: '유능하고 냉철한 주인공', decision_score: 1 }
         ]
     },
     {
-        q: '9. "나 오늘 화나는 일 있어서 단거 먹었어"에 대한 나의 답변은',
+        q: '친구가 "나 꿀꿀해서 영화 한 편 보고 왔어"라고 할 때 나는',
         a: [
-            { answer: '왜 화났어?ㅠㅠㅜ', decision_score: 0 },
-            { answer: '헉ㅋㅋ 뭐 먹었는데?', decision_score: 1 }
+            { answer: '"기분이 왜 꿀꿀해ㅠㅠ"', decision_score: 0 },
+            { answer: '"오 어떤 영화 봤어??"', decision_score: 1 }
         ]
     },
     {
-        q: '10. 계획을 세우고 일 처리를 하시는 편인가요?',
+        q: '영화관에서 영화보기, 집콕 영화보기 중 나는',
         a: [
-            { answer: '예', pattern_score: 0 },
-            { answer: '아니', pattern_score: 1 }
+            { answer: '나는 집이 편해ㅎ', energy_score: 0 }, // j,p 0 pattern_score
+            { answer: '영화는 역시 영화관이지', energy_score: 1 }
         ]
     },
     {
-        q: '11. 점심 먹는 시간이 대체로 일정하신 편인가요?',
+        q: '영화관에서 영화를 보던 중 오줌이 마려운 나는',
         a: [
-            { answer: '예', pattern_score: 0 },
-            { answer: '아니오', pattern_score: 1 }
+            { answer: '참고 참다 영화가 끝난 후 화장실로', energy_score: 0 },
+            { answer: '안참고 바로 화장실로', energy_score: 1 }
         ]
     },
     {
-        q: '12. 여행을 갔다',
+        q: '나는 크리스마스를',
         a: [
-            { answer: '아침부터 저녁 그리고 숙소까지 다 예약한다.', pattern_score: 0 },
-            { answer: '그냥 발 닿는 대로 간다. ', pattern_score: 1 }
+            { answer: '혼자 보낸다', energy_score: 0 },
+            { answer: '연인과 함께 보낸다', energy_score: 1 }
         ]
     }
 ]
