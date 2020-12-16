@@ -217,14 +217,14 @@ const goResult = () => {
     const pTitle = document.querySelector('.p');
     // const res_point = document.querySelector('.point');
     const pin = document.querySelector('.pin');
-    const img_url = 'img/image-' + grade + '.png';
+    const img_url = 'img/image-' + grade + '.jpg';
     const res_img = document.createElement('img');
     const res_img_div = document.querySelector('.art');
     //추가된 const
-    const match_img_url = 'img/image-' + match_grade + '.png';
+    const match_img_url = 'img/image-' + match_grade + '.jpg';
     const match_img = document.createElement('img');
     const match_div = document.querySelector('.match-img');
-    const unmatch_img_url = 'img/image-' + unmatch_grade + '.png';
+    const unmatch_img_url = 'img/image-' + unmatch_grade + '.jpg';
     const unmatch_img = document.createElement('img');
     const unmatch_div = document.querySelector('.unmatch-img');
     //추가된 const(종료)
