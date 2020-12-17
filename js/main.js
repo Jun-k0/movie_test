@@ -48,7 +48,6 @@ const e_calcScore = () => {
     for (let i = 9; i < 12; i++) {
         e_point += qnaList[i].a[select[i]].energy_score;
     }
-    console.log(e_point)
     return e_point;
 }
 
@@ -57,7 +56,6 @@ const p_calcScore = () => {
     for (let i = 0; i < 3; i++) {
         p_point += qnaList[i].a[select[i]].perception_score;
     }
-    console.log(p_point)
     return p_point;
 }
 
@@ -66,7 +64,6 @@ const d_calcScore = () => {
     for (let i = 6; i < 9; i++) {
         d_point += qnaList[i].a[select[i]].decision_score;
     }
-    console.log(d_point)
     return d_point;
 }
 
@@ -75,14 +72,13 @@ const pat_calcScore = () => {
     for (let i = 3; i < 6; i++) {
         pat_point += qnaList[i].a[select[i]].pattern_score;
     }
-    console.log(pat_point)
     return pat_point;
 }
 
 const sortResult = (e_point,p_point,d_point,pat_point) => {
     let num = 0;
     if (e_point < 1.5 && p_point < 1.5 && d_point <1.5 && pat_point < 1.5) {
-        num = 0; // INFP
+        num = 0; // INFP 
     } else if (e_point >= 1.5 && p_point < 1.5 && d_point <1.5 && pat_point < 1.5) {
         num = 1; // ENFP
     } else if (e_point < 1.5 && p_point >= 1.5 && d_point < 1.5 && pat_point < 1.5) {
@@ -121,37 +117,37 @@ const sortResult = (e_point,p_point,d_point,pat_point) => {
 const matchResult = (grade) => {
     let num = 0;
     if (grade == 0) {
-        num = 7;
-    } else if(grade == 1){
-        num = 10;
-    }else if(grade == 2){
-        num = 12;
-    }else if(grade == 3){
-        num = 13;
-    }else if(grade == 4){
-        num = 6;
-    }else if(grade == 5){
-        num = 14;
-    }else if(grade == 6){
-        num = 4;
-    }else if(grade == 7){
-        num = 0;
-    }else if(grade == 8){
         num = 15;
-    }else if(grade == 9){
+    } else if(grade == 1){
+        num = 14;
+    }else if(grade == 2){
+        num = 13;
+    }else if(grade == 3){
+        num = 12;
+    }else if(grade == 4){
         num = 11;
-    }else if(grade == 10){
-        num = 1;
-    }else if(grade == 11){
+    }else if(grade == 5){
+        num = 10;
+    }else if(grade == 6){
         num = 9;
-    }else if(grade == 12){
-        num = 2;
-    }else if(grade == 13){
-        num = 3;
-    }else if(grade == 14){
-        num = 5;
-    }else if(grade == 15){
+    }else if(grade == 7){
         num = 8;
+    }else if(grade == 8){
+        num = 7;
+    }else if(grade == 9){
+        num = 6;
+    }else if(grade == 10){
+        num = 5;
+    }else if(grade == 11){
+        num = 4;
+    }else if(grade == 12){
+        num = 3;
+    }else if(grade == 13){
+        num = 2;
+    }else if(grade == 14){
+        num = 1;
+    }else if(grade == 15){
+        num = 0;
     }
     console.log(num)
     return num;
@@ -159,50 +155,42 @@ const matchResult = (grade) => {
 const unmatchResult = (grade) => {
     let num = 0;
     if (grade == 0) {
-        num = 2;
+        num = 11;
     } else if(grade == 1){
-        num = 15;
-    }else if(grade == 2){
-        num = 0;
-    }else if(grade == 3){
-        num = 9;
-    }else if(grade == 4){
-        num = 14;
-    }else if(grade == 5){
-        num = 5;
-    }else if(grade == 6){
         num = 8;
-    }else if(grade == 7){
-        num = 12;
-    }else if(grade == 8){
+    }else if(grade == 2){
         num = 6;
-    }else if(grade == 9){
+    }else if(grade == 3){
+        num = 5;
+    }else if(grade == 4){
+        num = 15;
+    }else if(grade == 5){
         num = 3;
+    }else if(grade == 6){
+        num = 2;
+    }else if(grade == 7){
+        num = 14;
+    }else if(grade == 8){
+        num = 1;
+    }else if(grade == 9){
+        num = 13;
     }else if(grade == 10){
         num = 12;
     }else if(grade == 11){
-        num = 13;
+        num = 0;
     }else if(grade == 12){
-        num = 7;
+        num = 10;
     }else if(grade == 13){
-        num = 11;
+        num = 9;
     }else if(grade == 14){
-        num = 4;
+        num = 7;
     }else if(grade == 15){
-        num = 1;
+        num = 4;
     }
-    console.log(num)
     return num;
 }
 // 변경 종
 const goResult = () => {
-    if (pcMQL.matches) {
-        console.log('PC');
-        wrap.style.marginTop = '10px';
-    } else if (tabletMQL.matches) {
-        console.log('tablet');
-        wrap.style.marginTop = '10px';
-    }
 
     const result = document.getElementById('result');
     const e_point = e_calcScore();
