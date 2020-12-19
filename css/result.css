@@ -8,13 +8,17 @@
     
 }
 .text3{
-    font-size: 20px;
+    font-size: 30px;
+    font-style: oblique;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 .text2{
     margin-top:0px;
+    font-size: 23px;
+    margin-bottom: 40px;
 }
 .art img{
     width: 300px;
@@ -24,9 +28,11 @@
 .res_title{
     text-align: center;
     margin-bottom: 0px;
+    margin-top: 40px;
 }
 .res_title2{
     margin-top: 5px;
+    margin-bottom:40px;
 }
 .res_desc{
     text-align: left;

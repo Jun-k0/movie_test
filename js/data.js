@@ -58,7 +58,7 @@ const qnaList = [
         ]
     },
     {
-        q: '영화를 보던 중 오징어 다리가',
+        q: '영화를 보던 중 오징어다리가',
         q2: '하나 남았을 때 나는',
         a: [
             { answer: '그냥 너 먹어ㅎㅎ', decision_score: 0 }, // t,f 0 decision_score
