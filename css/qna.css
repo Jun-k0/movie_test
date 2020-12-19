@@ -14,9 +14,9 @@
     align-self: center;
     width: 75%;
     height: 15px;
-    border: 3px solid black;
+    border: 3px solid white;
     border-radius: 20px;
-    background: black;
+    background: white;
     animation: fade-in 0.3s ease-in-out;
     margin-bottom: 60px;
     margin-top: 20px;
@@ -27,20 +27,26 @@
     align-self: center;
     height: 100%;
     border-radius: 20px;
-    background-color: white;
+    background-color: rgb(58,111,93);
 }
-.q_box {
+.q_box, .q_box2 {
     text-align: center;
     display:flex;
     justify-content: center;
-    font-size: 27px;
+    font-size: 22px;
     margin-bottom: 70px;
     margin-top: 30px;
-    width:75%;
+    width:300px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 700;
     line-height: 1.60;
+}
+.q_box{
+    margin-bottom: 0px;
+}
+.q_box2{
+    margin-top: 0px;
 }
 .answer{
     margin-top:100px;
@@ -53,7 +59,7 @@
     width: 350px;
     height: 80px;
     border-radius: 20px;
-    background-color: #ff5100;
+    background-color: white;
     margin: auto auto 20px;
     padding: 0 30px;
     cursor: pointer;
@@ -66,4 +72,5 @@
     letter-spacing: -.5px;
     border: 0;
     outline: none;
+    font-size:14px
 }

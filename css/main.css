@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'yg-jalnan';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
-    font-weight: normal;
+    font-weight: lighter;
     font-style: normal;
 }
 /* 폰트 출처 : "https://www.goodchoice.kr/font#is-third" */
@@ -11,7 +11,7 @@ body {
     max-width: 500px;
     width: 100%;
     margin: auto !important;
-    background: darkgray;
+    background: rgb(168,32,36);
     overflow: hidden;
     font-family: yg-jalnan;
 }

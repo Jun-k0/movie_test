@@ -12,7 +12,7 @@
     height: 9vh;
     line-height: 9vh;
     border-radius: 10px;
-    background:rgb(133,215,164);
+    background:rgba(255,255,255,50);
     color:black;
     font-size: 8px;
     font-size: 0.5rem;
@@ -32,10 +32,10 @@
     border-radius: 10px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#57a0db+1,e577c4+100 */
     background: #57a0db; /* Old browsers */
-    background: -moz-linear-gradient(left,  #57a0db 1%, #e577c4 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #57a0db 1%,#e577c4 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #57a0db 1%,#e577c4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a0db', endColorstr='#e577c4',GradientType=1 ); /* IE6-9 */
+    background: -moz-linear-gradient(left, rgb(58,161,93) 1%, rgb(58,111,93) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgb(58,161,93) 1%,rgb(58,111,93) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgb(58,161,93) 1%,rgb(58,111,93) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(58,161,93)', endColorstr=',rgb(58,111,93)',GradientType=1 ); /* IE6-9 */
     animation: working 5.5s 2s forwards;
 }
 .wait {

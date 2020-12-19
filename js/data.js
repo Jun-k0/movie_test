@@ -10,49 +10,56 @@
 
 const qnaList = [
     {
-        q: '나의 최애 영화를 설명할 때 나는',
+        q: '나의 최애 영화를 설명할 때',
+        q2: '나는',
         a: [
             { answer: '구체적인 상황 하나하나 설명', perception_score: 0 },
             { answer: '대략 느낌과 분위기를 설명', perception_score: 1 }
             ]
     },
     {
-        q: '크리스마스에 연인(친구)를 기다릴 때 나는',
+        q: '크리스마스에 연인(친구)를',
+        q2: '기다릴 때 나는',
         a: [
             { answer: '오늘 어떻게 놀지 일정을 생각', perception_score: 0 }, // 0 i, e energy_score
             { answer: '오와 저거 신기하다~ (의식의 흐름~)', perception_score: 1 }
             ]
     },
     {
-        q: '영화 속 등장인물이 되는 상상을 한 나는',
+        q: '영화에 나오는 일들에 대해',
+        q2: '나는',
         a: [
-            { answer: '상상하기를 거부한다.', perception_score: 0 },
-            { answer: '나도 언젠가 저런 백마탄 왕자님이.. ', perception_score: 1 }
+            { answer: '영화는 영화일 뿐...', perception_score: 0 },
+            { answer: '저런 일도 있을 수도 있지~!', perception_score: 1 }
             ]
     },
     {
         q: '영화를 예매할 때 나는',
+        q2: '',
         a: [
             { answer: '그날따라 땡기는 영화', pattern_score: 0 }, // n,s 0 perception_score
             { answer: '미리미리 계획대로', pattern_score: 1 }
             ]
     },
     {
-        q: '크리스마스에 예약한 식당이 문을 닫았을 때 나는',
+        q: '크리스마스에 예약한 식당이',
+        q2: '문을 닫았을 때 나는',
         a: [
             { answer: '잠만 기다려봐. 금방 찾아볼게', pattern_score: 0 },
             { answer: '옆에 괜찮은 식당있던데? 거기로 가자', pattern_score: 1 }
         ]
     },
     {
-        q: '이번 주는 크리스마스인데 나는',
+        q: '이번 주는 크리스마스인데',
+        q2: '나는',
         a: [
             { answer: '전날 미리 어떻게 나갈 지 준비한다.', pattern_score: 0 },
             { answer: '아침에 끌리는 옷 입고 나간다.', pattern_score: 1 }
         ]
     },
     {
-        q: '영화를 보던 중 오징어 다리가 하나 남았을 때 나는?',
+        q: '영화를 보던 중 오징어 다리가',
+        q2: '하나 남았을 때 나는',
         a: [
             { answer: '그냥 너 먹어ㅎㅎ', decision_score: 0 }, // t,f 0 decision_score
             { answer: '안내면 진 거 가위바위보!!!', decision_score: 1 }
@@ -60,27 +67,31 @@ const qnaList = [
     },
     {
         q: '영화 속 주인공이 된 나는',
+        q2: '',
         a: [
             { answer: '따뜻한 감성의 주인공', decision_score: 0 },
             { answer: '유능하고 냉철한 주인공', decision_score: 1 }
         ]
     },
     {
-        q: '친구가 "꿀꿀해서 영화 한 편 보고 왔어"라 할 때 나는',
+        q: '친구가 "꿀꿀해서 영화 한 편',
+        q2: '보고 왔어"라 할 때 나는',
         a: [
             { answer: '"기분이 왜 꿀꿀해ㅠㅠ"', decision_score: 0 },
             { answer: '"오 어떤 영화 봤어??"', decision_score: 1 }
         ]
     },
     {
-        q: '영화관에서 영화보기, 집콕 영화보기 중 나는',
+        q: '영화관에서 영화보기,',
+        q2: '집콕 영화보기 중 나는',
         a: [
             { answer: '나는 집이 편해ㅎ', energy_score: 0 }, // j,p 0 pattern_score
             { answer: '영화는 역시 영화관이지', energy_score: 1 }
         ]
     },
     {
-        q: '영화관에서 영화를 보던 중 오줌이 마려운 나는',
+        q: '영화관에서 영화를 보던 중',
+        q2: '오줌이 마려운 나는',
         a: [
             { answer: '참고 참다 영화가 끝난 후 화장실로', energy_score: 0 },
             { answer: '안참고 바로 화장실로', energy_score: 1 }
@@ -88,6 +99,7 @@ const qnaList = [
     },
     {
         q: '나는 크리스마스를',
+        q2: '',
         a: [
             { answer: '혼자 보낸다', energy_score: 0 },
             { answer: '연인과 함께 보낸다', energy_score: 1 }

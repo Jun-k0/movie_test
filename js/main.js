@@ -329,9 +329,11 @@ const goNext = () => {
     const status = document.querySelector('.status');
     const qNum = qnaList[qIdx];
     const q = document.querySelector('.q_box');
+    const q2 = document.querySelector('.q_box2');
 
     status.style.width = (ENDPOINT * (qIdx + 1)) + '%';
     q.innerHTML = qNum.q;
+    q2.innerHTML = qNum.q2;
     qna.style.animation =
         'fade-in 0.2s ease-in-out 0.3s forwards, ' +
         'going-down 0.2s ease-in-out 0.3s forwards';

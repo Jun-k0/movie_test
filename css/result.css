@@ -32,7 +32,7 @@
     text-align: left;
     padding: 28px 28px 28px 36px;
     border-radius: 10px;
-    background-color:rgb(133,215,164);
+    background-color:rgb(58,111,93);
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -40,7 +40,7 @@
 }
 li::before{
     content: "\2022";
-    color: #ff5100;
+    color:  rgb(168,32,36);
     font-size: 16px;
     font-weight: 700;
     display: inline-block;
@@ -93,12 +93,12 @@ li::before{
     width: 350px;
     height: 80px;
     border-radius: 20px;
-    background-color: #ff5100;
+    background-color:white;
     margin: auto auto 40px;
     padding: 0 30px;
     cursor: pointer;
     color:black;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 700;
     font-stretch: normal;
     font-style: normal;
