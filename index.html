@@ -151,40 +151,41 @@
 <script src="js/main.js"></script>
 <script type="text/javascript">
     function sendLink() {
-      Kakao.Link.sendDefault({
-        objectType: 'feed',
-        content: {
-          title: '딸기 치즈 케익',
-          description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-          imageUrl:
-            'http://k.kakaocdn.net/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        Kakao.init('a2331e4bb576f485ec3ed92b090c34db');
+        Kakao.Link.createDefaultButton({
+      container: '#kakao-link-btn',
+      objectType: 'feed',
+      content: {
+        title: '딸기 치즈 케익',
+        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
+        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
+        link: {
+          mobileWebUrl: 'https://developers.kakao.com',
+          webUrl: 'https://developers.kakao.com'
+        }
+      },
+      social: {
+        likeCount: 286,
+        commentCount: 45,
+        sharedCount: 845
+      },
+      buttons: [
+        {
+          title: '웹으로 보기',
           link: {
-            mobileWebUrl: 'https://jun-k0.github.io/movie_test/',
-            webUrl: 'https://jun-k0.github.io/movie_test/',
-          },
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
         },
-        social: {
-          likeCount: 286,
-          commentCount: 45,
-          sharedCount: 845,
-        },
-        buttons: [
-          {
-            title: '웹으로 보기',
-            link: {
-              mobileWebUrl: 'https://jun-k0.github.io/movie_test/',
-              webUrl: 'https://jun-k0.github.io/movie_test/',
-            },
-          },
-          {
-            title: '앱으로 보기',
-            link: {
-              mobileWebUrl: 'https://jun-k0.github.io/movie_test/',
-              webUrl: 'https://jun-k0.github.io/movie_test/',
-            },
-          },
-        ],
-      })
+        {
+          title: '앱으로 보기',
+          link: {
+            mobileWebUrl: 'https://developers.kakao.com',
+            webUrl: 'https://developers.kakao.com'
+          }
+        }
+      ]
+    });
     }
   </script>
   <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
