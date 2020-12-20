@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics (깃허브 유입 제외)
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5TN75SKJV"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -11,6 +11,7 @@
 
     gtag('config', 'G-C5TN75SKJV');
     </script>
+    -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
@@ -23,8 +24,8 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="크리스마스, 당신만을 위한 영화추천">
     <meta property="og:description" content="집콕하고 영화보자">
-    <meta property="og:image" content="https://jun-k0.github.io/movie_test/img/donseok.jpg">
-
+    <meta property="og:image" content="http://www.inssatest.com/img/donseok.jpg">
+    <!-- https://jun-k0.github.io/movie_test/img/donseok.jpg -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <title>
@@ -38,13 +39,7 @@
     <link rel="stylesheet" href="css/calc.css">
     <link rel="stylesheet" href="css/result.css">
     <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
-    <!--[if lt ie 11]>
-    <script>
-        alert('IE 11 미만 브라우저에서는 정상적으로 동작하지 않습니다.\n다른 브라우저(크롬, 파이어폭스 등)를 이용해주세요.');
-    </script>
-    <![endif]-->
 </head>
-
 <body>
 <div id="wrap">
     <section id="welcome" class="container">
@@ -60,7 +55,6 @@
                 안전하게 집에서 보내셔야죠?
             </h3>
         </div>
-        
         <!--
         <div id="name-input">
             <input type="text" placeholder="이름" autofocus>
@@ -112,23 +106,16 @@
             </ul>
         </div>
         <div class = "about-match">
-            <!-- 나와 잘 맞는 xxx 추천 -->
             <div class="match-box">
                 <h4 class="match_txt">평생 영화 친구</h3>
-                <div class="match-img">
-                
-                </div>
+                <div class="match-img"></div>
             </div>
-            <!-- 나와 잘 맞지 않는 xxx 추천 -->
             <div class="unmatch-box">
                 <h4 class="unmatch_txt">영화보다 싸울 친구</h3>
-                <div class="unmatch-img">
-                    
-                </div>
+                <div class="unmatch-img"></div>
             </div>
-            
         </div>
-        <h3 class="share_txt">결과 공유하고 영화친구 찾기</h3>
+        <h3 class="share_txt">링크 공유하고 영화친구 찾기</h3>
         <div class="share_box">
             <a id="kakao-link-btn" href="javascript:sendLink()">
                 <img src="img/kakaoicon.png"/>
@@ -152,40 +139,7 @@
 <script type="text/javascript">
     function sendLink() {
         Kakao.init('a2331e4bb576f485ec3ed92b090c34db');
-        Kakao.Link.createDefaultButton({
-      container: '#kakao-link-btn',
-      objectType: 'feed',
-      content: {
-        title: '딸기 치즈 케익',
-        description: '#케익 #딸기 #삼평동 #카페 #분위기 #소개팅',
-        imageUrl: 'http://mud-kage.kakao.co.kr/dn/Q2iNx/btqgeRgV54P/VLdBs9cvyn8BJXB3o7N8UK/kakaolink40_original.png',
-        link: {
-          mobileWebUrl: 'https://developers.kakao.com',
-          webUrl: 'https://developers.kakao.com'
-        }
-      },
-      social: {
-        likeCount: 286,
-        commentCount: 45,
-        sharedCount: 845
-      },
-      buttons: [
-        {
-          title: '웹으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com'
-          }
-        },
-        {
-          title: '앱으로 보기',
-          link: {
-            mobileWebUrl: 'https://developers.kakao.com',
-            webUrl: 'https://developers.kakao.com'
-          }
-        }
-      ]
-    });
+        Kakao.Link.sendCustom({ templateId: 43046 })
     }
   </script>
   <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>
@@ -198,9 +152,5 @@
           // 출처: https://sweet-myo.tistory.com/497 [달콤한환상]
       });
   </script>
-  
-  
-  
 </body>
-
 </html>
