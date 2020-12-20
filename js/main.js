@@ -385,7 +385,7 @@ window.onload = load();
 
 document.querySelector(".btn").addEventListener("click", function(){
     var tempElem = document.createElement('textarea');
-    tempElem.value = 'https://jun-k0.github.io/movie_test/';  
+    tempElem.value = 'http://www.inssatest.com/';  
     document.body.appendChild(tempElem);
   
     tempElem.select();
