@@ -22,7 +22,8 @@
 }
 .sub_title{
     font-size: 17px;
-    margin-bottom: 13vh;
+    margin-bottom: 80px;
+    line-height: 1.2;
     font-stretch: normal;
     font-style: normal;
     text-align: center;
@@ -35,7 +36,7 @@
     width: 335px;
     height: 100px;
     border-radius: 20px;
-    background-color: white;
+    background-color: antiquewhite;
     margin: auto auto 40px;
     padding: 0 30px;
     cursor: pointer;
