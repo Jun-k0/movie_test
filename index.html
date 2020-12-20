@@ -2,16 +2,15 @@
 <html lang="ko">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics (깃허브 유입 제외)
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C5TN75SKJV"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X1JQNTK8K4"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-C5TN75SKJV');
+        gtag('config', 'G-X1JQNTK8K4');
     </script>
-    -->
     <meta charset="utf-8">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
@@ -115,7 +114,7 @@
                 <div class="unmatch-img"></div>
             </div>
         </div>
-        <h3 class="share_txt">링크 공유하고 영화친구 찾기</h3>
+        <h3 class="share_txt">결과 공유하고 영화친구 찾기</h3>
         <div class="share_box">
             <a id="kakao-link-btn" href="javascript:sendLink()">
                 <img src="img/kakaoicon.png"/>
@@ -137,9 +136,16 @@
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
 <script type="text/javascript">
+    Kakao.init('a2331e4bb576f485ec3ed92b090c34db');
     function sendLink() {
-        Kakao.init('a2331e4bb576f485ec3ed92b090c34db');
-        Kakao.Link.sendCustom({ templateId: 43046 })
+        Kakao.Link.sendCustom({ templateId: 43046,
+            templateArgs:{
+                'img':document.querySelector('.art').getElementsByTagName('img')[0].currentSrc,
+                'title':
+                    document.querySelector('.text3').innerHTML+' - '+
+                    document.querySelector('.art').getElementsByTagName('img')[0].title
+            }
+        })
     }
   </script>
   <script src='https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js'></script>

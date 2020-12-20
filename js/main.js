@@ -227,7 +227,7 @@ const goResult = () => {
 
     // res_point.innerHTML = infoList[grade].stitle;
     res_img.src = img_url;
-    res_img.alt = infoList[grade].name;
+    res_img.alt = infoList[grade].stitle;
     res_img.title = infoList[grade].name;
     res_img_div.appendChild(res_img);
     animal.innerHTML = infoList[grade].name;
