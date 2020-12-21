@@ -13,31 +13,31 @@ const qnaList = [
         q: '나의 최애 영화를 설명할 때',
         q2: '나는',
         a: [
-            { answer: '구체적인 상황 하나하나 설명', perception_score: 0 },
-            { answer: '대략 느낌과 분위기를 설명', perception_score: 1 }
+            { answer: '구체적인 상황 하나하나 설명', perception_score: 1 },
+            { answer: '대략 느낌과 분위기를 설명', perception_score: 0 }
             ]
     },
     {
         q: '크리스마스에 연인(친구)를',
         q2: '기다릴 때 나는',
         a: [
-            { answer: '오늘 어떻게 놀지 일정을 생각', perception_score: 0 }, // 0 i, e energy_score
-            { answer: '오와 저거 신기하다~ (의식의 흐름~)', perception_score: 1 }
+            { answer: '오늘 어떻게 놀지 일정을 생각', perception_score: 1 }, // 0 i, e energy_score
+            { answer: '오와 저거 신기하다~ (의식의 흐름~)', perception_score: 0 }
             ]
     },
     {
         q: '영화에 나오는 일들에 대해',
         q2: '나는',
         a: [
-            { answer: '영화는 영화일 뿐...', perception_score: 0 },
-            { answer: '저런 일도 있을 수도 있지~!', perception_score: 1 }
+            { answer: '영화는 영화일 뿐...', perception_score: 1 },
+            { answer: '저런 일도 있을 수도 있지~!', perception_score: 0 }
             ]
     },
     {
         q: '영화를 예매할 때 나는',
         q2: '',
         a: [
-            { answer: '그날따라 땡기는 영화', pattern_score: 0 }, // n,s 0 perception_score
+            { answer: '그날따라 땡기는 영화', pattern_score: 0 }, // n0, s perception_score
             { answer: '미리미리 계획대로', pattern_score: 1 }
             ]
     },
