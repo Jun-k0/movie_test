@@ -3,10 +3,10 @@ mbti 기반 심리테스트 입니다
 
 ## 결과
 #### 조회수 2.3천 달성!
-![visit](./visit.png)
+![visit](./visit.PNG)
 
 #### 사용자 1.5천 달성!
-![first_visit](./first_visit.png)
+![first_visit](./first_visit.PNG)
 
 
 -21.01.02 수정완료 
